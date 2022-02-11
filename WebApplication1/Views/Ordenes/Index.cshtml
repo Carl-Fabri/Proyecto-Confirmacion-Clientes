@@ -1,0 +1,36 @@
+﻿@model List<WebApplication1.Models.ViewModels.OrdenesViewModel>
+@{
+    ViewBag.Title = "Listado de Pedidos pendientes de confirmación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+<div class="Contenedor">
+    <table class="table table-striped tablaOrdenes">
+        <thead style="background-color: darkgray">
+            <tr  class="titulos">
+                <th scope="col">Numero Orden</th>
+                <th scope="col" _msthash="2280473" _msttexthash="96577">Fecha</th>
+                <th scope="col" _msthash="2280603" _msttexthash="91195">Nombre/Razon Social</th>
+                <th scope="col" _msthash="2280733" _msttexthash="29224">Telefono</th>
+                <th scope="col" _msthash="2280733" _msttexthash="29224">Funcion</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <th scope="row" _msthash="2288221" _msttexthash="4459">@item.OrderID </th>
+                <td class="ApartadoFecha" _msthash="2287935" _msttexthash="74958">@item.OrderDate</td>
+                <td _msthash="2288065" _msttexthash="47255">@item.ContactName </td>
+                <td _msthash="2288195" _msttexthash="43290">@item.Phone</td>
+                <td _msthash="2288195" _msttexthash="43290"> <a class="btn btn-default" href="~/Ordenes/Editar/@item.OrderID">Editar</a> </td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,64 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+
+/*Aqui instanciamos el tamaños de los bordes de la tabla*/
+table, td {
+    border-right: 2px solid black;
+}
+
+
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    text-align: center;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    text-align: center;
+
+}
+
+.tablaOrdenes {
+    border-bottom: 2px black solid;
+}
+
+.Contenedor tbody tr .ApartadoFecha {
+    border-left: 2px solid black;
+}
+
+.Contenedor {
+    margin-top: 50px;
+    overflow-y: scroll;
+    height: 440px;
+    border: 2px black solid;
+    /* border-top: 2px black solid; */
+    /* border-bottom: 2px black solid; */
+}
+
+
+
+input,
+select,
+textarea {
+    max-width: none; 
+}
